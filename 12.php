@@ -1,7 +1,7 @@
 <?php
 header('Content-type: text/html; charset=utf-8');
-$n = 1000;
-for($n=1000;$n>50;$n/=2){
+$num = 1000;
+for($num=1000;$num>50;$num/=2){
     $num++;
     echo "$n<br>";
 }
