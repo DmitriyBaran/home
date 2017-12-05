@@ -1,30 +1,10 @@
 <?php
 header('Content-type: text/html; charset=utf-8');
-$cols=3;
-$rows=3;
-echo '<table border="0">';
-for ($i = 1; $i <= $cols; $i++)
-{
-    echo '<tr>';
-    for ($j = 1; $j <= $rows; $j++)
-    {
-        echo '<td>'. $i++. ",".'</td>';
+$arr = array(1,2,3,4,5,6,7,8,9);
+    foreach ($arr as $a) {
+        if ($a % 3 == 0)
+            echo $a . '<br>';
+        else
+            echo $a .",";
     }
-    echo '</tr>';
-
-    echo '<tr>';
-    for ($j = 1; $j <= $rows; $j++)
-    {
-        echo '<td>'. $i++. ",".'</td>';
-    }
-    echo '</tr>';
-
-    echo '<tr>';
-    for ($j = 1; $j <= $rows; $j++)
-    {
-        echo '<td>'.  $i++. ",".'</td>';
-    }
-    echo '</tr>';
-}
-echo '</table>';
 ?>
